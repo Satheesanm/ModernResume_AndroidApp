@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Objective"
+android:background="@color/darkgrays"
+android:orientation="vertical">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/homelogo"
+            android:layout_width="119dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/homeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="Modern Resume Maker"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="57dp"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="790dp"
+        android:background="@drawable/dashboard"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_margin="32dp"
+            android:background="@drawable/banner">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="145dp"
+                android:layout_height="142dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.428"
+                app:srcCompat="@drawable/objective" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="232dp"
+                android:layout_height="171dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/circle_white"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="151dp" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="184dp"
+                android:layout_height="150dp"
+                android:text="Career Objective"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="21dp"
+                tools:ignore="MissingConstraints"></TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="100dp"
+            android:textSize="18dp"
+            android:text="Select an objective of your choice : ( Tap To Find More Options )" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="To establish a long-term career with prospects for advancement in [particular industry]."
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/darkgrays"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginRight="10dp"
+            android:text="To further my educational and professional development in a stable and dynamic environment."
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="#32f23f"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginRight="10dp"
+            android:text="To tackle difficulties in a demanding position in an innovative and effective manner."
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="#f7d40e"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginRight="10dp"
+            android:text="To find work with a firm that provides a favourable environment for learning and using new skills and technology for the benefit of the organisation."
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="#32f23f"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="110dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="#1567f7"
+            android:padding="7dp"
+            android:text="SAVE"
+           android:textColor="@color/white"
+
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+</ScrollView>
+
+
+
+
+

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Education"
+android:background="@color/darkgrays"
+android:orientation="vertical">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/homelogo"
+            android:layout_width="119dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/homeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="Modern Resume Maker"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="57dp"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="790dp"
+        android:background="@drawable/dashboard"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_margin="32dp"
+            android:background="@drawable/banner">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="145dp"
+                android:layout_height="142dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.428"
+                app:srcCompat="@drawable/education" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="232dp"
+                android:layout_height="171dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/circle_white"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="151dp" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="184dp"
+                android:layout_height="150dp"
+                android:text="Education"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="21dp"
+                tools:ignore="MissingConstraints"></TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="30dp"
+            android:text="Course :"
+           android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Degree"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+           android:textColor="@color/black"
+            android:text="Institute :"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:ems="10"
+            android:hint="University Name"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+           android:textColor="@color/black"
+            android:text="CGPA/SGPI/%:"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:ems="10"
+            android:hint="GPA"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+           android:textColor="@color/black"
+            android:text="Year Of Passing :"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+
+            android:layout_marginRight="7dp"
+            android:ems="10"
+            android:hint="Year of passing"
+            android:inputType="number" />
+
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="110dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="45dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="#1567f7"
+            android:padding="7dp"
+            android:text="SAVE"
+            android:textAlignment="center"
+           android:textColor="@color/white"
+            android:textSize="22sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+</ScrollView>
+
+
+
+
+

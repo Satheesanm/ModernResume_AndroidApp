@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/homedashboard"
+    tools:context=".CreateResumePage">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/homelogo"
+                android:layout_width="119dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/homeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Welcome To Resume builder"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="57dp"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="790dp"
+            android:background="@drawable/dashboard"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_margin="32dp"
+                android:background="@drawable/banner">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="145dp"
+                    android:layout_height="142dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.428"
+                    app:srcCompat="@drawable/resume" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="232dp"
+                    android:layout_height="171dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/circle_white"
+                    tools:ignore="ContentDescription,MissingConstraints"
+                    tools:layout_editor_absoluteX="157dp"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="219dp"
+                    android:layout_height="137dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Modern Resume"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button                    
+                    android:id="@+id/b1"
+                    android:layout_width="0dp"
+                   android:layout_height="85dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:backgroundTint="@color/white"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:text="Personal Info"
+                    android:drawableTop="@drawable/baseline_person_24"
+                 android:textColor="@color/Goldenrod" />
+
+                <Button
+                android:id="@+id/b2"
+                    android:layout_width="0dp"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                   android:backgroundTint="@color/white"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/baseline_cast_for_education_24"
+                 android:textColor="@color/Goldenrod"
+                    android:text="Education" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/b3"
+                    android:layout_width="0dp"
+                   android:layout_height="85dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                   android:backgroundTint="@color/white"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/baseline_computer_24"
+                    android:text="Technical Skills"
+                 android:textColor="@color/Goldenrod" />
+
+                <Button
+                    android:id="@+id/b4"
+                    android:layout_width="0dp"
+                   android:layout_height="85dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                   android:backgroundTint="@color/white"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/baseline_downhill_skiing_24"
+                 android:textColor="@color/Goldenrod"
+                    android:text="Interests" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/b5"
+                    android:layout_width="0dp"
+                   android:layout_height="85dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                   android:backgroundTint="@color/white"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/baseline_apps_24"
+                    android:text="Projects"
+                 android:textColor="@color/Goldenrod" />
+
+                <Button
+                    android:id="@+id/b6"
+                    android:layout_width="0dp"
+                   android:layout_height="85dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                   android:backgroundTint="@color/white"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/baseline_thumb_up_24"
+                 android:textColor="@color/Goldenrod"
+                    android:text="Achievements" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/b7"
+                    android:layout_width="0dp"
+                   android:layout_height="85dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                   android:backgroundTint="@color/white"
+                    android:padding="5dp"
+                    android:text="Objective"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/baseline_card_travel_24"
+                 android:textColor="@color/Goldenrod" />
+
+                <Button
+                    android:id="@+id/b8"
+                    android:layout_width="0dp"
+                   android:layout_height="85dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                  android:textStyle="bold"
+                    android:clickable="true"
+                   android:backgroundTint="@color/white"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/baseline_emoji_people_24"
+                 android:textColor="@color/Goldenrod"
+                    android:text="Reference" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/b9"
+                    android:layout_width="0dp"
+                   android:layout_height="85dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1"
+                  
+                    android:backgroundTint="#ffffff"
+                    android:padding="5dp"
+                    android:text="GENERATE RESUME"
+                 android:textColor="@color/Goldenrod"
+                    android:textSize="22sp" />
+
+
+            </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</ScrollView>
